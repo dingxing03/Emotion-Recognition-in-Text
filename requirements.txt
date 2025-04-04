@@ -1,0 +1,16 @@
+numpy
+pandas
+nltk
+contractions
+spacy
+scikit-learn
+gensim
+tensorflow
+seaborn
+matplotlib
+wordcloud
+transformers
+tf-keras
+torch
+torchvision 
+torchaudio
