@@ -4,7 +4,7 @@ import os
 import sys
 
 # Add the Emotion-Detector directory to the path
-sys.path.append(os.path.join(os.path.dirname(__file__), 'Emotion-Detector'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '../Emotion-Detector/model_directory'))
 
 # Import the chatbot functions
 from chatbot import preprocess, predict_emotions, generate_response, translate_mixed_language

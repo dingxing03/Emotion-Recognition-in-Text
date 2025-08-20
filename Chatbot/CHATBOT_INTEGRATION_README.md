@@ -20,7 +20,7 @@ This guide explains how to integrate your Python DistilBERT emotion detection ch
    npm install
    ```
 
-3. **Model Files**: Ensure your DistilBERT model files are in the `Emotion-Detector/` directory
+3. **Model Files**: Ensure your DistilBERT model files are in the `Emotion-Detector/model_directory` directory
 
 ## 🚀 Quick Start
 
@@ -96,11 +96,7 @@ This guide explains how to integrate your Python DistilBERT emotion detection ch
 ```
 Chatbot/
 ├── api_server.py              # Flask API server
-├── requirements.txt           # Python dependencies
 ├── start_chatbot.bat         # Windows startup script
-├── Emotion-Detector/         # Your Python model
-│   ├── chatbot.py
-│   └── distilbert/
 ├── src/
 │   ├── hooks/
 │   │   └── useChatbot.ts     # Chat logic hook
@@ -109,6 +105,9 @@ Chatbot/
 │   └── screens/
 │       └── DesktopSizeX/     # Main chat interface
 └── package.json              # Node.js dependencies
+Emotion-Detector/         
+│   ├── model_directory/
+│   │   └── distilbert/     # Python model
 ```
 
 ## 🔄 Customization
