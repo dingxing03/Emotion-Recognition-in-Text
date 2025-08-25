@@ -48,7 +48,7 @@ Understanding emotions in text is an important part of Natural Language Processi
   <img src="performance_on_ISEAR.png" alt="ISEAR Performance" width="500">
   <figcaption><b>Figure 1:</b> Model performance on ISEAR dataset</figcaption>
 </figure>
-<br>
+<br><br>
 <figure>
   <img src="performance_on_synthetic.png" alt="Synthetic Performance" width="500">
   <figcaption><b>Figure 2:</b> Model performance on synthetic dataset after train using GoEmotions dataset</figcaption>
