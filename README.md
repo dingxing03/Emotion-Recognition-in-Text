@@ -61,3 +61,26 @@ Understanding emotions in text is an important part of Natural Language Processi
 - DistilBERT achieved the best performance across all metrics, confirming that transformer models are well-suited for handling noisy real-world text.
 - Deep learning models (CNN, Bi-LSTM) outperformed XGBoost, demonstrating a stronger ability to capture subtle semantic patterns in informal and code-switched language.
 
+# Chatbot Demonstration
+
+## 1. Chatbot Interface
+This is the main interface of the chatbot where users can type their messages and view the emotions detected.
+
+<p align="center">
+  <img src="chatbot.png" alt="Chatbot Interface" width="600">
+</p>
+
+**Figure 1:** User interface of the chatbot.  
+
+<br>
+
+## 2. Example Conversation
+Below is an example interaction between the user and the chatbot, showcasing how the system processes inputs and generates responses based on the emotion detected.
+
+<p align="center">
+  <img src="chatbot_conversation1.png" alt="Example Chat" width="600">
+  <img src="chatbot_conversation2.png" alt="Example Chat" width="600">
+</p>
+
+**Figure 2:** Example conversation demonstrating chatbot responses.  
+
