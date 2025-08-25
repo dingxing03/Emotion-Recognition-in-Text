@@ -44,8 +44,9 @@ Understanding emotions in text is an important part of Natural Language Processi
     - Transformer-based models such as BERT, XLNet, DistilBERT, RoBERTa
 
 # Results
-    - RoBERTa outclassed all models, due to its robust pre-training with dynamic masking and extended training.
-    - DistilBERT delivered nearly 97% of RoBERTa’s performance with 40% fewer parameters.
-    - DistilBERT achieved the best performance across all metrics, confirming that transformer models are well-suited for handling noisy real-world text.
-    - Deep learning models (CNN, Bi-LSTM) outperformed XGBoost, demonstrating a stronger ability to capture subtle semantic patterns in informal and code-switched language.
+<img src="performance_on_ISEAR.png" alt="Diagram" width="500">
+- RoBERTa outclassed all models, due to its robust pre-training with dynamic masking and extended training.
+- DistilBERT delivered nearly 97% of RoBERTa’s performance with 40% fewer parameters.
+- DistilBERT achieved the best performance across all metrics, confirming that transformer models are well-suited for handling noisy real-world text.
+- Deep learning models (CNN, Bi-LSTM) outperformed XGBoost, demonstrating a stronger ability to capture subtle semantic patterns in informal and code-switched language.
 
