@@ -19,9 +19,7 @@ Understanding emotions in text is an important part of Natural Language Processi
 # Dataset
 1. ISEAR dataset contains a total of 76666 sentences and 7 emotion labeled: Anger, disgust, fear, sadness, shame, joy, and guilt.
 2. GoEmotions dataset contains a total of 58,009 sentences and 27 emotions labeled with neutral.
-3. Synthetic multilingual dataset generated using Deepseek and Copilot (with Short Forms & Mixed Emotions)
-    - Each emotion categories consist 7-9 text samples
-    - Total text samples: 218
+3. Synthetic multilingual dataset generated using Deepseek and Copilot contains a total of 218 sentences and 27 emotions.
 
 # Methodology
 - The methodology used for this project involves the following steps:
