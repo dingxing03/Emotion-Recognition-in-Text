@@ -51,8 +51,9 @@ Understanding emotions in text is an important part of Natural Language Processi
 
 <figure>
   <img src="performance_on_synthetic.png" alt="Synthetic Performance" width="500">
-  <figcaption><b>Figure 2:</b> Model performance on synthetic dataset</figcaption>
+  <figcaption><b>Figure 2:</b> Model performance on synthetic dataset after train using GoEmotions dataset</figcaption>
 </figure>
+
 - RoBERTa outclassed all models, due to its robust pre-training with dynamic masking and extended training.
 - DistilBERT delivered nearly 97% of RoBERTa’s performance with 40% fewer parameters.
 - DistilBERT achieved the best performance across all metrics, confirming that transformer models are well-suited for handling noisy real-world text.
