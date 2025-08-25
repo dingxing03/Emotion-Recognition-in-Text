@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ```
 
 # Introduction
-
+Understanding emotions in text is an important part of Natural Language Processing (NLP), as it allows AI to respond more naturally. This project aimed to **develop and evaluate an AI system for real-time emotion classification** using **traditional machine learning, deep learning, and transformer-based models**. Experiments were conducted on two primary datasets: the **single-label ISEAR dataset** and the **multi-label, highly imbalanced GoEmotions dataset**, with additional testing on a **synthetic multilingual corpus**. The results revealed a performance hierarchy: transformers like RoBERTa and DistilBERT outperformed deep learning models, which in turn surpassed traditional classifiers. **DistilBERT** was identified as the most efficient, balancing high accuracy with computational practicality, especially on multilingual text. A functional chatbot prototype integrating DistilBERT and GPT-4 was developed. 
 
 # Dataset
 1. ISEAR dataset contains a total of 76666 sentences and 7 emotion labeled: Anger, disgust, fear, sadness, shame, joy, and guilt.
@@ -44,5 +44,8 @@ pip install -r requirements.txt
     - Transformer-based models such as BERT, XLNet, DistilBERT, RoBERTa
 
 # Results
-
+    - RoBERTa outclassed all models, due to its robust pre-training with dynamic masking and extended training.
+    - DistilBERT delivered nearly 97% of RoBERTa’s performance with 40% fewer parameters.
+    - DistilBERT achieved the best performance across all metrics, confirming that transformer models are well-suited for handling noisy real-world text.
+    - Deep learning models (CNN, Bi-LSTM) outperformed XGBoost, demonstrating a stronger ability to capture subtle semantic patterns in informal and code-switched language.
 
