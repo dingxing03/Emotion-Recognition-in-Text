@@ -53,7 +53,6 @@ Understanding emotions in text is an important part of Natural Language Processi
   <img src="performance_on_synthetic.png" alt="Synthetic Performance" width="500">
   <figcaption><b>Figure 2:</b> Model performance on synthetic dataset after train using GoEmotions dataset</figcaption>
 </figure>
-
 <br><br>
 
 - RoBERTa outclassed all models, due to its robust pre-training with dynamic masking and extended training.
