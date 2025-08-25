@@ -16,7 +16,7 @@ pip install -r requirements.txt
 # Introduction
 Understanding emotions in text is an important part of Natural Language Processing (NLP), as it allows AI to respond more naturally. This project aimed to **develop and evaluate an AI system for real-time emotion classification** using **traditional machine learning, deep learning, and transformer-based models**. Experiments were conducted on two primary datasets: the **single-label ISEAR dataset** and the **multi-label, highly imbalanced GoEmotions dataset**, with additional testing on a **synthetic multilingual corpus**. The results revealed a performance hierarchy: transformers like RoBERTa and DistilBERT outperformed deep learning models, which in turn surpassed traditional classifiers. **DistilBERT** was identified as the most efficient, balancing high accuracy with computational practicality, especially on multilingual text. A functional chatbot prototype integrating DistilBERT and GPT-4 was developed. 
 
-# Dataset
+# Datasets
 1. ISEAR dataset contains a total of 76666 sentences and 7 emotion labeled: Anger, disgust, fear, sadness, shame, joy, and guilt.
 2. GoEmotions dataset contains a total of 58,009 sentences and 27 emotions labeled with neutral.
 3. Synthetic multilingual dataset generated using Deepseek and Copilot contains a total of 218 sentences and 27 emotions.
@@ -56,10 +56,10 @@ Understanding emotions in text is an important part of Natural Language Processi
 </figure>
 <br><br>
 
-- RoBERTa outclassed all models, due to its robust pre-training with dynamic masking and extended training.
+- **RoBERTa outclassed** all models, due to its robust pre-training with dynamic masking and extended training.
 - DistilBERT delivered nearly 97% of RoBERTa’s performance with 40% fewer parameters.
-- DistilBERT achieved the best performance across all metrics, confirming that transformer models are well-suited for handling noisy real-world text.
-- Deep learning models (CNN, Bi-LSTM) outperformed XGBoost, demonstrating a stronger ability to capture subtle semantic patterns in informal and code-switched language.
+- **DistilBERT achieved the best performance across all metrics**, confirming that transformer models are well-suited for handling noisy real-world text.
+- **Deep learning models (CNN, Bi-LSTM) outperformed XGBoost**, demonstrating a stronger ability to capture subtle semantic patterns in informal and code-switched language.
 
 # Chatbot Demonstration
 
@@ -67,7 +67,7 @@ Understanding emotions in text is an important part of Natural Language Processi
 This is the main interface of the chatbot where users can type their messages and view the emotions detected.
 
 <p align="center">
-  <img src="chatbot.png" alt="Chatbot Interface" width="600">
+  <img src="images/chatbot.png" alt="Chatbot Interface" width="600">
 </p>
 
 **Figure 1:** User interface of the chatbot.  
@@ -78,8 +78,8 @@ This is the main interface of the chatbot where users can type their messages an
 Below is an example interaction between the user and the chatbot, showcasing how the system processes inputs and generates responses based on the emotion detected.
 
 <p align="center">
-  <img src="chatbot_conversation1.png" alt="Example Chat" width="600">
-  <img src="chatbot_conversation2.png" alt="Example Chat" width="600">
+  <img src="images/chatbot_conversation1.png" alt="Example Chat" width="600">
+  <img src="images/chatbot_conversation2.png" alt="Example Chat" width="600">
 </p>
 
 **Figure 2:** Example conversation demonstrating chatbot responses.  
