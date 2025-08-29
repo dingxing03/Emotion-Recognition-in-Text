@@ -4,9 +4,8 @@
 
 # Installation
 1. Clone the repository to local machine:
-```
 https://github.com/dingxing03/Emotion-Recognition-in-Text.git
-```
+
 
 2. Install the 'requirements.txt':
 ```
@@ -23,6 +22,7 @@ python api_server.py
 npm install
 npm run dev
 ```
+
 Open the app in your browser at: http://localhost:5173/
 
 # Introduction
