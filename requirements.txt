@@ -18,5 +18,6 @@ tf-keras
 torch
 torchaudio
 torchvision 
+torch_geometric
 transformers
 wordcloud
