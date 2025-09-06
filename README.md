@@ -28,6 +28,10 @@ Open the app in your browser at: http://localhost:5173/
 # Introduction
 Understanding emotions in text is an important part of Natural Language Processing (NLP), as it allows AI to respond more naturally. This project aimed to **develop and evaluate an AI system for real-time emotion classification** using **traditional machine learning, deep learning, and transformer-based models**. Experiments were conducted on two primary datasets: the **single-label ISEAR dataset** and the **multi-label, highly imbalanced GoEmotions dataset**, with additional testing on a **synthetic multilingual corpus**. The results revealed a performance hierarchy: transformers like RoBERTa and DistilBERT outperformed deep learning models, which in turn surpassed traditional classifiers. **DistilBERT** was identified as the most efficient, balancing high accuracy with computational practicality, especially on multilingual text. A functional chatbot prototype integrating DistilBERT and GPT-4 was developed. 
 
+**Key Objective:**  
+> To develop an AI-based system (chatbot) that can detect and classify real-time emotions from textual data.  
+> To implement and compare different emotion recognition techniques to identify the most effective approach for text-based emotion detection.
+
 # Datasets
 1. ISEAR dataset contains a total of 76666 sentences and 7 emotion labeled: Anger, disgust, fear, sadness, shame, joy, and guilt.
 2. GoEmotions dataset contains a total of 58,009 sentences and 27 emotions labeled with neutral.
@@ -96,3 +100,10 @@ Below is an example interaction between the user and the chatbot, showcasing how
 
 **Figure 2:** Example conversation demonstrating chatbot responses.  
 
+# Conclusion
+
+- High Accuracy: 📊 DistilBERT + GNN refiner achieved 90.32% accuracy
+- Broad Support: 🌍 Multilingual💬 Short forms📝 Informal text
+- Efficiency:    ⚡ Real-time emotion recognition in code-switched text
+> Emotions are complex, with rare emotions like grief often lacking in datasets.
+Future work should address data imbalance and explore multimodal approaches such as speech or facial expressions to create a more robust system.
