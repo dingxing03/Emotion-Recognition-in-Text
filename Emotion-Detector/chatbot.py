@@ -26,7 +26,7 @@ from torch_geometric.nn import GCNConv
 import torch.nn as nn
 import torch.nn.functional as F
 
-API_KEY = "" # Define your OpenAI API key here 
+API_KEY = "" # Set your OpenAI API key here  
 client = OpenAI(api_key=API_KEY)
 
 # === GNN Refiner Model Class ===
@@ -359,8 +359,13 @@ def start_chat():
             
             # Display with emotion confidence
             if emotion_confidences:
-                conf_display = ", ".join([f"{e.capitalize()}({c:.0%})" for e, c in emotion_confidences])
-                print(f"🤖 Chatbot [{conf_display}]: {ai_response}")
+                # Filter emotions with confidence > 0.90 and format them
+                high_confidence_emotions = [(e, c) for e, c in emotion_confidences if c > 0.92]
+                if high_confidence_emotions:
+                    conf_display = ", ".join([f"{e.capitalize()}({c:.0%})" for e, c in high_confidence_emotions])
+                    print(f"🤖 Chatbot [{conf_display}]: {ai_response}")
+                else:
+                    print(f"🤖 Chatbot: {ai_response}")
             else:
                 print(f"🤖 Chatbot: {ai_response}")
                 

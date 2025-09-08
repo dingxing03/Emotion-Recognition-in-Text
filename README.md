@@ -8,23 +8,31 @@
 https://github.com/dingxing03/Emotion-Recognition-in-Text.git
 ```
 
-2. Install the 'requirements.txt':
+2. Create and activate the virtual environment
+```
+python -m venv .venv
+source .venv/bin/activate     # Linux / Mac
+.venv\Scripts\activate        # Windows
+```
+
+3. Install the 'requirements.txt':
 ```
 pip install -r requirements.txt
 ```
 
-3. Start the backend server:
+4. Start the backend server:
 ```
 python api_server.py
 ```
 
-4. Open the website (frontend):
+5. Open the website (frontend):
 ```
 npm install
 npm run dev
 Open the app in your browser at: http://localhost:5173/
 ```
 
+---
 # Introduction
 Understanding emotions in text is an important part of Natural Language Processing (NLP), as it allows AI to respond more naturally. This project aimed to **develop and evaluate an AI system for real-time emotion classification** using **traditional machine learning, deep learning, and transformer-based models**. Experiments were conducted on two primary datasets: the **single-label ISEAR dataset** and the **multi-label, highly imbalanced GoEmotions dataset**, with additional testing on a **synthetic multilingual corpus**. The results revealed a performance hierarchy: transformers like RoBERTa and DistilBERT outperformed deep learning models, which in turn surpassed traditional classifiers. **DistilBERT** was identified as the most efficient, balancing high accuracy with computational practicality, especially on multilingual text. A functional chatbot prototype integrating DistilBERT with GNN refiner and GPT-4 was developed. 
 
@@ -107,3 +115,11 @@ Below is an example interaction between the user and the chatbot, showcasing how
 - Efficiency:     ⚡ Real-time emotion recognition in code-switched text
 > Emotions are complex, with rare emotions like grief often lacking in datasets.
 Future work should address data imbalance and explore multimodal approaches such as speech or facial expressions to create a more robust system.
+
+
+---
+## API key Setup
+1. Start the API locally:
+```
+uvicorn app:app --reload --host 0.0.0.0 --port 8000
+```
